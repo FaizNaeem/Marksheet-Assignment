@@ -40,3 +40,15 @@ width: 50%;
     text-align: center;
     font-weight: bold;
 }
+.re-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* margin-top: 10px; */
+    /* margin: 0 auto; */
+}
+.div{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}

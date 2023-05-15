@@ -11,20 +11,22 @@ function submit(){
     const roll = document.getElementById("roll").innerHTML=get1_Date
     const grade = document.getElementById("grade")
     var total=get2_Date+get3_Date+get4_Date+get5_Date+get6_Date;
-    var cal = +Math.round( total/500*100 +"%");
+    var cal = total/500*100;
+    const round = Math.round(cal)
+
     
     const tot = document.getElementById("tot").innerHTML= "500" +"/"+total 
-    var per = document.getElementById("Percentage").innerHTML=cal;
-    if(per>=80 || per<=100){
+    var per = document.getElementById("Percentage").innerHTML=round;
+    if(per<=100 && per>=80){
         grade.innerHTML="A+"
     }
-    else if(per>70 ||per<80){
+    else if(per>=70 && per<80){
         grade.innerHTML="A"
     }
-    else if(per>60 ||per<70){
+    else if(per>=60 && per<70){
         grade.innerHTML="B"
     }
-    else if(per>50 ||per<60){
+    else if(per>=50 && per<60){
         grade.innerHTML="C"
     }
     else{
